@@ -9,7 +9,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
     <record id="account_account_template_action" model="ir.actions.act_window">
         <field name="name">Account Templates</field>
         <field name="res_model">account.account.template</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <menuitem

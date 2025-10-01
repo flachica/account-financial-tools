@@ -23,7 +23,7 @@
                             widget="one2many_list"
                             colspan="4"
                             nolabel="1"
-                            mode="tree"
+                            mode="list"
                             options="{'no_create_edit': True}"
                         />
                     </group>
@@ -42,19 +42,19 @@
         </field>
     </record>
     <record id="view_account_tax_group_tree" model="ir.ui.view">
-        <field name="name">account.tax.group.tree</field>
+        <field name="name">account.tax.group.list</field>
         <field name="model">account.tax.group</field>
         <field name="arch" type="xml">
-            <tree name="account_tax_group">
+            <list name="account_tax_group">
                 <field name="sequence" />
                 <field name="name" />
-            </tree>
+            </list>
         </field>
     </record>
     <record id="action_account_tax_group" model="ir.actions.act_window">
         <field name="name">Tax Groups</field>
         <field name="res_model">account.tax.group</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
     <menuitem
         id="account_tax_group_menu"
